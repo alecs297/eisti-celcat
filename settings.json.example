@@ -1,0 +1,10 @@
+{
+    "login": "e-$$$$$$",
+    "password": "",
+    "login_url": "https://services-web.u-cergy.fr/calendar/LdapLogin",
+    "time_url": "https://services-web.u-cergy.fr/calendar/cal?vt=month",
+    "response_url": "https://services-web.u-cergy.fr/calendar/Home/GetCalendarData",
+    "login_id": "#Name",
+    "passw_id": "#Password",
+    "ics_path": "emploi.ics"
+}

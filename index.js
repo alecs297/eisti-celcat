@@ -30,17 +30,12 @@ function parseDesc(text) {
         headless: true,
     });
 
-    try {
-        const page = await browser.newPage();
+    const page = await browser.newPage();
 
-        await page.goto(settings.login_url);
-        await type(page, settings.login_id, settings.login);
-        await type(page, settings.passw_id, settings.password);
-        await pressEnter(page);
-    } catch (e) {
-        console.log(e)
-        return await browser.close();
-    }
+    await page.goto(settings.login_url);
+    await type(page, settings.login_id, settings.login);
+    await type(page, settings.passw_id, settings.password);
+    await pressEnter(page);
 
     page.on('response', async(res) => {
         if (res.url().startsWith(settings.response_url)) {

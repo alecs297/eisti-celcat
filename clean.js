@@ -65,7 +65,7 @@ function get_lc(r) {
         await do_request(settings.calendar_url, "GET", { cookie: `${af[0]};${get_lc(res)}` }, `vt=month`)
     );
     console.log("Extracting calendar data...");
-    res = await do_request(settings.response_url, "POST", { cookie: `${af[0]};${get_lc(res)}` }, `start=1970-01-01&end=${moment().add(1, "year").format("YYYY")}-12-31&resType=104&calView=month&federationIds%5B%5D=${fid}`);
+    res = await do_request(settings.response_url, "POST", { cookie: `${af[0]};${get_lc(res)}` }, `start=${moment().subtract(1, "month").format("YYYY-MM-DD")}&end=${moment().add(1, "year").format("YYYY")}-12-31&resType=104&calView=month&federationIds%5B%5D=${fid}`);
     console.log("Parsing data...");
     let data = (await res.json()).map(x => {
         return {

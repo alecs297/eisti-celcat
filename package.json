@@ -1,17 +1,17 @@
 {
-  "name": "celcat",
-  "version": "1.0.0",
-  "description": "Converts celcat shit to a correct format",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "foin",
-  "license": "ISC",
-  "dependencies": {
-    "html-entities": "^2.1.1",
-    "ics": "^2.27.0",
-    "moment": "^2.29.1",
-    "puppeteer": "^5.5.0"
-  }
+    "name": "celcat",
+    "version": "1.0.0",
+    "description": "Converts celcat shit to a correct format",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "foin",
+    "license": "ISC",
+    "dependencies": {
+        "html-entities": "^2.1.1",
+        "ics": "^2.27.0",
+        "moment": "^2.29.1",
+        "node-fetch": "^2.6.1"
+    }
 }

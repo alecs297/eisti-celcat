@@ -7,5 +7,11 @@
     "response_url": "https://services-web.u-cergy.fr/calendar/Home/GetCalendarData",
     "login_id": "#Name",
     "passw_id": "#Password",
-    "ics_path": "emploi.ics"
+    "ics_path": "emploi",
+    "people": [
+        {
+            "id": "22014796",
+            "slug": "GIG3"
+        }
+    ]
 }

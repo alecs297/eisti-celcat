@@ -22,7 +22,7 @@ Listed in package.json
 ## Instalation
 
 > - Clone the repo
-> - Rename settings.json.example to settings.json and change "login" and "password".
+> - Rename settings.json.example to settings.json and change "login" and "password". Add people using their federation ids from the example
 > - Install the dependencies via `npm install`
 
 for the puppeteer version, install puppeteer via `npm install puppeteer`
@@ -35,7 +35,6 @@ for the puppeteer version, install puppeteer via `npm install puppeteer`
 
 ```none
 remove the puppeteer part
-multi user support
 command line arguments
 ```
 

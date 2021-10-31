@@ -4,7 +4,7 @@
 
 Extracts the current month's planning from celcat and converts to ics.
 
-`puppeteer-version.js` uses puppeteer, slow but it's the first version so I'm keeping it for the memes
+`puppeteer-version.js` uses puppeteer, slow but it's the first version, used for testing
 
 `index.js` uses direct requests
 

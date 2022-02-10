@@ -24,12 +24,11 @@ function parseDesc(t) {
 
 // General web request function
 async function do_request(a, m = "GET", h = {}, p = null) {
-    let r = await fetch(a, {
+    let r = await fetch((p && m === "GET") ? a + p : a, {
         headers: Object.assign(default_headers, h),
         method: m,
         redirect: "manual",
-        body: m === "POST" ? p : null,
-        query: m === "GET" ? p : null
+        body: m === "POST" ? p : null
     });
     return r;
 }
@@ -69,6 +68,7 @@ function get_lc(r) {
         },
         `Name=${encodeURIComponent(settings.login)}&Password=${encodeURIComponent(settings.password)}&__RequestVerificationToken=${encodeURIComponent(af[1])}`
     );
+
 
     settings.people.forEach(async c => {
         console.log("Extracting calendar data for " + c.slug);
